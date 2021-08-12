@@ -1,0 +1,43 @@
+// / * About page */
+.about {
+   margin-bottom: 168px;
+}
+
+.about .container {
+   width: 1280px;
+   height: 450px;
+   padding: 137px 85px;
+   border-radius: 10px;
+   background-image: url(../img/about.jpg);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+   .about .container {
+		background-image: url('../img/about2x.jpg');
+	}
+}
+
+.about__heading {
+   margin-top: 0;
+   margin-bottom: 24px;
+   font-family: 'Fraunces';
+   font-style: normal;
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 48px;
+   color: #FEFCF7;
+}
+
+.about__paragraph {
+   width: 445px;
+   margin-top: 0;
+   font-family: 'Barlow';
+   font-size: 16px;
+   line-height: 26px;
+   color: #FEFCF7;
+}

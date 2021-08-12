@@ -1,0 +1,141 @@
+/* collection */
+.collection {
+   padding: 200px 0;
+   background-image: url(../img/collection.png);
+   background-size: 1111px 196px;
+   background-repeat: no-repeat;
+   background-position: left calc(50% + 0px) top 80px;
+}
+
+.collection__list {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.collection__item {
+   width: 255px;
+}
+
+.collection__img {
+   margin-bottom: 71px;
+}
+
+.collection__heading {
+   margin-top: 0;
+   margin-bottom: 24px;
+   font-family: 'Fraunces';
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+   text-align: center;
+   color: #333D4B;
+}
+
+.collection_paragraph {
+   width: 255px;
+   margin-top: 0;
+   margin-bottom: 0;
+   font-family: 'Barlow';
+   font-size: 16px;
+   line-height: 26px;
+   text-align: center;
+   color: #333D4B;
+}
+
+@include media-max(900px) {
+
+   .collection {
+      padding: 200px 0 100px 0;
+      background-image: url(../img/collection.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left calc(50% + 0px) top 110px;
+   }
+
+   .collection .container {
+      margin: 0 95px;
+   }
+
+   .collection__list {
+      padding: 0 10px;
+      flex-direction: column;
+   }
+
+   .collection__item {
+      width: 60%;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .collection__img {
+      margin-bottom: 0;
+      margin-right: 32px;
+   }
+
+   .collection__heading {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: start;
+   }
+
+   .collection_paragraph {
+      font-size: 15px;
+      line-height: 25px;
+      text-align: start;
+   }
+}
+
+@include media-max(670px) {
+   // 
+
+   .collection__list {
+      width: 90%;
+      flex-direction: column;
+   }
+
+   .collection__item {
+      flex-direction: column;
+   }
+
+   .collection__img {
+      margin-right: 0;
+   }
+
+   .collection__heading {
+      text-align: center;
+   }
+   .collection_paragraph {
+      text-align: center;
+   }
+
+
+}
+
+@include media-max(500px) {
+   
+
+   .collection__list {
+      flex-direction: column;
+   }
+
+   .collection__item {
+      flex-direction: column;
+   }
+
+   .collection__img {
+      margin-right: 0;
+   }
+
+   .collection__heading {
+      text-align: center;
+   }
+   .collection_paragraph {
+      text-align: center;
+   }
+
+
+}

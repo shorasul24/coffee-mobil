@@ -1,0 +1,177 @@
+.choose__drink .container {
+   width: 1320px;
+   margin: 0 auto;
+   padding: 0 85px;
+   display: flex;
+}
+
+.drink__list {
+   width: 255px;
+   margin: 0;
+   margin-right: 125px;
+   padding: 0;
+}
+
+.drink__list__item {
+   margin-bottom: 24px;
+}
+
+.drink__link,.drink__link--span {
+   font-family: 'Fraunces';
+   font-weight: 900;
+   line-height: 32px;
+   font-size: 24px;   
+   color: #83888F;
+   opacity: 0.4;
+
+  
+}
+
+.drink__link:hover{
+   color: #83888F;
+   opacity: 0.6;
+}
+
+.drink__link:active {
+   color: black;
+}
+
+.drink__link--span {
+   margin-right: 28.5px;
+}
+
+.drink__line {
+   display: inline-block;
+   width: 255px;
+   height: 1px;
+   background: #83888F;
+   opacity: 0.25;
+}
+
+.form {
+   width: 730px;
+   margin-bottom: 168px;
+ }
+
+.form__list {
+   width: 730px;
+   margin: 0;
+   margin-bottom: 88px;
+   padding: 0;
+}
+
+.form__item {
+   margin-bottom: 56px;
+}
+
+.form__heading {
+   margin-top: 0;
+   margin-bottom: 56px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: 'Fraunces';
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 48px;
+   color: #83888F;
+}
+
+.form__heading::after {
+   content: "";
+   display: block;
+   width: 18px;
+   height: 12px;
+   background-image: url("../img/open-choose.png");
+   background-repeat: no-repeat;
+}
+
+.form__heading:active:after {
+   transform: rotate(180deg);
+}
+
+.form__choose {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.form__working {
+   width: 228px;
+   height: 250px;
+   padding: 32px 28px;
+   display: inline-block;
+   background-color: #F4F1EB;
+   border-radius: 8px;
+
+   &:hover {
+      background-color: #0E8784;
+   }
+}
+
+input:checked + .form__working {
+   background: #FDD6BA;
+}
+
+.label__heading {
+   margin-bottom: 24px;
+   display: block;
+   font-family: 'Fraunces';
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+   color: #333D4B;
+
+   .form__working:hover & {
+      color: white;
+   }
+}
+
+
+.label__paragraph {
+   font-family: 'Barlow';
+   font-size: 16px;
+   line-height: 26px;
+   color: #333D4B;
+
+   .form__working:hover & {
+      color: white;
+   }
+}
+
+.form__info {
+   width: 730px;
+   padding: 27px 64px;
+   margin-bottom: 40px;
+   background: #2C343E;
+   border-radius: 10px;
+}
+
+.form__info__heading {
+   margin-top: 0;
+   margin-bottom: 8px;
+   font-family: 'Barlow';
+   font-size: 16px;
+   line-height: 26px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   opacity: 0.5;
+}
+
+.form__block {
+   margin: 0;
+   font-family: 'Fraunces';
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 40px;
+   color: #FFFFFF;
+}
+
+.block__f {
+   color: #0E8784;
+}
+
+.form__btn {
+   margin-left: auto;
+   border: none;
+}

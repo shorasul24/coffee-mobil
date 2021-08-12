@@ -1,0 +1,133 @@
+/* hero */
+.hero {
+   margin-bottom: 136px;
+}
+
+
+.hero .container {
+   margin: 0;
+   padding: 116px 85px;
+   border-radius: 10px;
+   background-image: url(../img/container-img.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.hero__irren {
+   width: 100%;
+   max-width: 1320px;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
+.hero__heading {
+   width: 100%;
+   max-width: 493px;
+   margin-top: 0;
+   margin-bottom: 32px;
+   font-family: 'Fraunces';
+   font-weight: 900;
+   font-size: 72px;
+   line-height: 72px;
+   color: #FEFCF7;
+}
+
+.hero__paragraph {
+   width: 100%;
+   max-width: 445px;
+   margin-top: 0;
+   margin-bottom: 56px;
+   font-family: 'Barlow';
+   font-size: 16px;
+   line-height: 26px;
+   color: #FEFCF7;
+   opacity: 0.8;
+}
+
+
+.section-link {
+   width: 217px;
+   display: block;
+   padding: 15px;
+   text-align: center;
+   font-weight: 900;
+   font-size: 18px;
+   line-height: 25px;
+   color: #fefcf7;
+   text-decoration: none;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+   background: #0e8784;
+   border-radius: 6px;
+   transition: background-color 0.2s ease;
+
+   &:hover {
+      background-color: #66d2cf;
+   }
+}
+
+
+@include media-max(700px) {
+
+   .hero__heading {
+      width: 100%;
+      max-width: 329px;
+      font-size: 48px;
+      line-height: 48px;
+   }
+
+   .hero__paragraph {
+      width: 100%;
+      max-width: 398px;
+      font-size: 15px;
+      line-height: 25px;
+      opacity: 0.8;
+   }
+}
+
+@include media-max(580px) {
+
+   .hero .container {
+      padding: 104px 58px;
+      background-position: right 20% center;
+   }
+}
+
+
+@include media-max(485px) { 
+   .hero .container {
+      padding: 100px 24px;
+      background-image: url('../img/hero-bg-tab.jpg');
+   }
+
+   .hero__heading {
+      margin-bottom: 24px;
+      font-size: 34px;
+      text-align: center;
+   }
+
+   .hero__paragraph {
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+   }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+   .hero .container {
+      background-image: url('../img/hero-bg-tab@2x.jpg');
+   }
+
+   @include media-max(485px) {
+      .hero .container {
+         background-image: url('../img/hero-bg-tab@2x.jpg');
+      }
+   }
+}

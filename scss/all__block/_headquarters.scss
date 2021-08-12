@@ -1,0 +1,90 @@
+/* headquarters */
+
+.headquarters {
+   margin-bottom: 168px;
+}
+
+.headquarters .container {
+   margin-left: 85px;
+}
+
+.headquarters__header {
+   margin-top: 0;
+   margin-bottom: 72px;
+   font-family: 'Fraunces';
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+   color: #83888F;
+}
+
+.headquarters__list {
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+.headquarters__item {
+   width: 285px;
+}
+
+.headquarters__item+.headquarters__item {
+   margin-left: 95px;
+}
+
+.headquarters__item:nth-child(1)::before {
+   width: 40px;
+   height: 49px;
+   margin-bottom: 45px;
+   display: block;
+   background-image: url(../img/kingdom-map.png);
+   background-repeat: no-repeat;
+   content: "";
+}
+
+.headquarters__item:nth-child(2)::before {
+   width: 51px;
+   height: 49px;
+   margin-bottom: 45px;
+   display: block;
+   background-image: url(../img/canada-map.png);
+   background-repeat: no-repeat;
+   content: "";
+}
+
+.headquarters__item:nth-child(3)::before {
+   width: 48px;
+   height: 49px;
+   margin-bottom: 45px;
+   display: block;
+   background-image: url(../img/australia-map.png);
+   background-repeat: no-repeat;
+   content: "";
+}
+
+.headquarters__heading {
+   margin-top: 0;
+   margin-bottom: 24px;
+   font-family: 'Fraunces';
+   font-style: normal;
+   font-weight: 900;
+   font-size: 32px;
+   line-height: 36px;
+   color: #333D4B;
+
+}
+
+.headquarters__paragraph {
+   margin-top: 0;
+   font-family: 'Barlow';
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 26px;
+   color: #333D4B;
+}
+
+.headquarters__cell {
+   color: #333D4B;
+}
