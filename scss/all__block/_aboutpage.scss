@@ -3,12 +3,21 @@
    margin-bottom: 168px;
 }
 
+.about__irren {
+   width: 100%;
+   max-width: 1320px;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
 .about .container {
-   width: 1280px;
-   height: 450px;
-   padding: 137px 85px;
+   margin: 0;
+   padding: 116px 85px;
    border-radius: 10px;
    background-image: url(../img/about.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -22,7 +31,11 @@
 	}
 }
 
+
+
 .about__heading {
+   width: 100%;
+   max-width: 493px;
    margin-top: 0;
    margin-bottom: 24px;
    font-family: 'Fraunces';
@@ -34,10 +47,32 @@
 }
 
 .about__paragraph {
-   width: 445px;
+   width: 100%;
+   max-width: 445px;
    margin-top: 0;
    font-family: 'Barlow';
    font-size: 16px;
    line-height: 26px;
    color: #FEFCF7;
+}
+
+@include media-max(400px) {
+
+   .about .container {
+      padding: 116px 24px;
+      background-image: url(../img/about-mob.jpg);
+   }
+
+   .about__heading {
+      font-size: 28px;
+      line-height: 28px;
+      text-align: center;
+   }
+
+   .about__paragraph {
+      font-size: 15px;
+      line-height: 25px;
+      text-align:center;
+      
+   }
 }
